@@ -1,0 +1,26 @@
+[project]
+
+name = "printarr"
+version = "1.0.0"
+description = "A small python utility to pretty-print a table summarizing arrays & scalars from numpy, pytorch, etc."
+readme = "README.md"
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+keywords = ["printing", "debugging", "logging", "tensor", "numpy", "pytorch", "jax"] 
+
+authors = [
+  {name = "Nicholas Sharp", email = "nmwsharp@gmail.com" }
+]
+maintainers = [
+  {name = "Nicholas Sharp", email = "nmwsharp@gmail.com" }
+]
+
+dependencies = [
+]
+
+[project.urls]  
+"Homepage" = "https://github.com/nmwsharp/printarr"
+
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
