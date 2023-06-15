@@ -1,7 +1,7 @@
 [project]
 
-name = "printarr"
-version = "1.0.0"
+name = "arrgh"
+version = "0.0.1"
 description = "A small python utility to pretty-print a table summarizing arrays & scalars from numpy, pytorch, etc."
 readme = "README.md"
 requires-python = ">=3.7"
@@ -19,7 +19,7 @@ dependencies = [
 ]
 
 [project.urls]  
-"Homepage" = "https://github.com/nmwsharp/printarr"
+"Homepage" = "https://github.com/nmwsharp/arrgh"
 
 [build-system]
 requires = ["setuptools>=43.0.0", "wheel"]

@@ -5,7 +5,7 @@ import os.path as path
 # Path to where the library lives
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src")))
 
-from printarr import printarr
+from arrgh import arrgh
 
 if __name__ == "__main__":
 
@@ -58,7 +58,7 @@ if __name__ == "__main__":
         
        
     print("\nbasic test")
-    printarr(noneval, \
+    arrgh(noneval, \
              intval1, intval2, \
              floatval0, floatval1, floatval2, \
              npval1, npval2, npval3, npval4, npval4[0,:,2:], npval5, \
@@ -69,10 +69,10 @@ if __name__ == "__main__":
 
     # test keyword name printrin
     print("\nkeyword test")
-    printarr(intval1, intval2, 2.*npval1, times2=2.323124123*npval1, times2_again=2.*npval1)
+    arrgh(intval1, intval2, 2.*npval1, times2=2.323124123*npval1, times2_again=2.*npval1)
     
     print("\nwidth test")
-    printarr(intval1, intval2, 2.*npval1, times2=2.323124123*npval1, times2_again=2.*npval1, printarr_float_width=10)
+    arrgh(intval1, intval2, 2.*npval1, times2=2.323124123*npval1, times2_again=2.*npval1, arrgh_float_width=10)
     
     print("\npassing invalid data test")
-    printarr(intval1, npval1, 'bad val', printarr)
+    arrgh(intval1, npval1, 'bad val', arrgh)

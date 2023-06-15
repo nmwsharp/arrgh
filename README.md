@@ -1,9 +1,11 @@
-# printarr
-A small python utility to pretty-print a table summarizing arrays &amp; scalars from numpy, pytorch, etc.
+# arrgh
+A small python utility to pretty-print a table summarizing arrays/tensors/scalars from numpy, pytorch, etc.
+
+**Why the name?** "arr" is short for "array", and "arrgh" is the sound you make while debugging your array shapes.
 
 ### Example
 
-Calling `printarr(my_arr1, my_arr2, ...)` prints a table like:
+Calling `arrgh(my_arr1, my_arr2, ...)` prints a table like:
 
 ```
        name | dtype         | shape         | type          | device | min         | max         | mean       
@@ -28,13 +30,13 @@ Calling `printarr(my_arr1, my_arr2, ...)` prints a table like:
 
 ### Installation
 
-`pip install printarr`
+`pip install arrgh`
 
-`from printarr import printarr`
+`from arrgh import arrgh`
 
 ### Docs
 
-The package exposes a single function called `printarr()`. Call it like: `printarr(my_arr, some_other_arr, maybe_a_scalar)`.
+The package exposes a single function called `arrgh()`. Call it like: `arrgh(my_arr, some_other_arr, maybe_a_scalar)`.
 
 The function accepts a variable number of arguments. Arrays can also be passed as named optional arguments.
 
@@ -49,7 +51,7 @@ Inputs can be:
 
 When arrays are passed as variable arguments, the printed name of the array in the table is inferred from the variable name in the outer scope, when possible. When arrays are passed as named keyword arguments, the key name is used.
 
-Pass an integer for the `printarr_float_width` option to specify the precision to which floating point types are printed.
+Pass an integer for the `arrgh_float_width` option to specify the precision to which floating point types are printed.
 
 Author: Nicholas Sharp (nmwsharp.com)
 

@@ -1,10 +1,10 @@
 import inspect
 
-def printarr(*arrs, printarr_float_width=6, **kwargs):
+def arrgh(*arrs, arrgh_float_width=6, **kwargs):
     """
     Print a pretty table giving name, shape, dtype, type, and content information for input tensors or scalars.
 
-    Call like: printarr(my_arr, some_other_arr, maybe_a_scalar). Accepts a variable number of arguments.
+    Call like: arrgh(my_arr, some_other_arr, maybe_a_scalar). Accepts a variable number of arguments.
 
     Arrays can also be passed as named optional arguments.
 
@@ -23,10 +23,10 @@ def printarr(*arrs, printarr_float_width=6, **kwargs):
     the variable name in the outer scope, when possible. When arrays are passed as named keyword arguments, the
     key name is used.
 
-    Pass an integer for the `printarr_float_width` option specify the precision to which floating point types are printed.
+    Pass an integer for the `arrgh_float_width` option specify the precision to which floating point types are printed.
 
     Author: Nicholas Sharp (nmwsharp.com)
-    Canonical source: https://github.com/nmwsharp/printarr, and the pypi package `printarr`
+    Canonical source: https://github.com/nmwsharp/arrgh, and the pypi package `arrgh`
     License: MIT license, and it is also released into the public domain. 
              Please retain this docstring as a reference.
     """
@@ -78,7 +78,7 @@ def printarr(*arrs, printarr_float_width=6, **kwargs):
                 return device_str
         return ""
     def format_float(x):
-        return f"{x:.{printarr_float_width}g}"
+        return f"{x:.{arrgh_float_width}g}"
     def minmaxmean_str(a):
         if a is None:
             return ('N/A', 'N/A', 'N/A')
