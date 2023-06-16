@@ -28,6 +28,8 @@ Calling `arrgh(my_arr1, my_arr2, ...)` prints a table like:
   torchval4 | torch.int64   | []            | torch.Tensor  | cpu    |      0      |      0      | N/A
 ```
 
+Use keyword arguments like `arrgh(custom_name=3.*my_arr1)` to specify names explicitly or give names to temporaries.
+
 ### Installation
 
 `pip install arrgh`
